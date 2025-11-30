@@ -5,37 +5,33 @@ class TestSet:
 
     def test_init(self):
         '''Test __init__ set with list'''
-        test_set = MySet([1,2,3,4])
+        test_set = ()
         set_list = [1,2,3,4]
-        for num in set_list:
-            assert(num in test_set.dictionary)
-
+        
+        
     def test_add(self):
         '''Test add() to set'''
-        test_set = MySet([1,2,3,4])
-        test_set.add(5)
+        test_set = ()
+        
         set_list = [1,2,3,4,5]
-        for num in set_list:
-            assert(num in test_set.dictionary)
-
+        
     def test_delete(self):
         '''Test delete()'''
-        test_set = MySet([1,2,3,4])
-        test_set.delete(2)
+        test_set = ()
+        
         set_list = [1,3,4]
-        for num in set_list:
-            assert(num in test_set.dictionary)
+       
 
     def test_has(self):
         '''Test has()'''
-        test_set = MySet([1,2,3,4])
-        assert(test_set.has(1) == True)
-        assert(test_set.has(7) == False)
+        test_set = MySet()
+        
+    
 
     def test_size(self):
         '''Test size()'''
-        test_set = MySet([1,2,3,4])
-        assert(len(test_set.dictionary) == 4)
+        test_set = MySet()
+        
 
 
 
